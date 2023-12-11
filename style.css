@@ -1,0 +1,70 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* overflow: hidden; */
+    background: #000;
+    color: white;
+    font-family: 'Pretendard';
+}
+
+body::-webkit-scrollbar {
+    width: 0;  /* 스크롤바 너비를 0으로 설정하여 숨깁니다. */
+}
+
+section {
+    margin-bottom: 150px;
+    
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+    width: 624px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 1%;
+    opacity: .5;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.container {
+    width: 1272px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    padding-bottom: 50px;
+}
+
+.box img{
+    border-radius: 10px;
+}
+
+.box video {
+    border-radius: 10px;
+}
+
+.overview {
+    margin-top: 150px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top {
+    margin-top: 26px;
+}

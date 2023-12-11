@@ -9,6 +9,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <div class="timeline">
+    </div>
+
     <div class="container">
         <section class="overview">
             <div class="title">
@@ -171,6 +174,28 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            var timeline = document.querySelector('.timeline');
+
+            function updateTimelineWidth() {
+                var scrollPercentage = (
+                    window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)
+                ) * 100;
+                timeline.style.width = scrollPercentage + '%';
+            }
+
+            window.addEventListener('scroll', function () {
+                requestAnimationFrame(updateTimelineWidth);
+            });
+
+            window.addEventListener('resize', function () {
+                requestAnimationFrame(updateTimelineWidth);
+            });
+        });
+    </script>
+
+    
 </body>
 </html>

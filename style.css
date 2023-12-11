@@ -69,3 +69,15 @@ p {
 .top {
     margin-top: 26px;
 }
+
+.timeline {
+    width: 0%;
+    height: 3px;
+    background: rgb(0, 128, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    z-index: 9999;
+    border-radius: 5px;
+}
